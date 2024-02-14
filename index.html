@@ -36,7 +36,7 @@
       .btn:hover {
         transform: scaleX(106%);
       }
-      btns.{
+      .btns{
         display: flex;
       }
     </style>
@@ -55,13 +55,13 @@
       //---------------------------------------
       function hn() {
         // Pobierz element, który ma być zaktualizowany
-        var mojElement = document.getElementById("hn");
+        var mojElement = document.getElementById("hno");
         var mojObraz = document.getElementById("photo");
 
         // Zaktualizuj zawartość elementu
+        hno.remove();
         mojObraz.src = "torcik2.png";
         title.innerHTML = "Zastanów się dobrze";
-        hn.remove();
       }
     </script>
   </head>
@@ -103,7 +103,7 @@
         <button type="button" class="btn" id="hj" onclick="hj()">
           Hell yeah!
         </button>
-        <div id="hn" style="display: inline-block;">
+        <div id="hno" style="display: inline-block;">
             <button type="button" class="btn" onclick="hn()">Hell no!</button>
         </div>
       </div>
